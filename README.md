@@ -1,9 +1,11 @@
 # Dynamic Programming and Optimal Control 
 Optimize a flying policy for a drone to pick up and deliver a package as quickly as possible when the system dynamics are subject to probabilistic uncertainties (Markov Decision Processes). 
 
-##
+#
 
-Full grade granted.
+Project rated with full marks.
+
+#
 
 ## Problem set up
 <img align="right" height="140" src="https://user-images.githubusercontent.com/79461707/139326683-485a8a9d-d14b-4130-9b95-feca32b94927.png"></img>
@@ -18,6 +20,8 @@ At time step <i>k</i> the system evolves in the following way:
   <li>Whenever a drone crashes it is brought to a base station carrying no package. The fixing procedure takes <i>N<sub>c</sub></i> time steps.</li>
 </ul>
 
+Further info: [Assignment.pdf](Assignment.pdf).
+
 ## Tasks
 The drone starts at the base station (yellow cell) and needs to pickup the package at the pickup point (purple cell) and delivery it to the delivery point (blue cell).
 Find the policy minimizing the expected number of time steps needed to achieve the goal by using the following approaches for the Infinite Horizon problem:
@@ -27,14 +31,12 @@ Find the policy minimizing the expected number of time steps needed to achieve t
   <li>Linear Programming.</li>
 </ul>
 
-## Setup
-
-Further info: [Assignment.pdf](Assignment.pdf).  
+## Setup  
   
 Run the whole project from [main.m](main.m).  
   
 Example with a random generated map:  
-source map (left) &nbsp;  **-->** &nbsp;  costs and policy to pickup (center) &nbsp;  **-->** &nbsp;  costs and policy to deliver (right).
+source map (left) &nbsp;  **->** &nbsp;  costs and policy up to the pickup (center) &nbsp;  **->** &nbsp;  costs and policy for the delivery (right).
 
 <p align="center">
  <img height="250" src="https://user-images.githubusercontent.com/79461707/139326567-9031236e-9442-45a7-a85a-d370a1081db7.png"/>
